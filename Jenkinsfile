@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'http://github.com/USER/REPO.git'
+                git 'https://github.com/Aakash280620/Project_Cloud.git'
                 // Run Maven Wrapper Commands
                 echo 'Building the Project with maven compile'
             }
