@@ -10,6 +10,7 @@ pipeline {
         
         stage('Build') {
             steps {
+                sh 'chmod +x mvnw'
                 // Compiles the Spring Boot app
                 sh './mvnw clean package -DskipTests' 
             }
